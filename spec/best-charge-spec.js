@@ -44,5 +44,4 @@ describe('Take out food', function () {
 ===================================`.trim()
     expect(summary).toEqual(expected)
   });
-
 });
