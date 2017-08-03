@@ -5,8 +5,8 @@
  * */
 function splitItem(item) {
   let obj = {};
-  obj.id = item.split('x')[0].trim(); // 去掉最后的空格
-  obj.count = (item.split('x')[1] - 0);
+  obj.id = item.split(' x ')[0]; // 去掉最后的空格
+  obj.count = (item.split(' x ')[1] - 0);
   return obj;
 }
 
@@ -101,7 +101,6 @@ function bestCharge(selectedItems) {
     str += '总计：'+totalPrice+'元\n';
   }
   str += '===================================';
-  console.log(str);
+  return str;
 }
 
-bestCharge(inputs);
